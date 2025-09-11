@@ -1,0 +1,29 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Stories can be read by anyone.
+    // They can only be created, updated, or deleted by authenticated users
+    // who are the author of the story.
+    match /stories/{storyId} {
+      allow read: if true;
+      allow create: if request.auth != null;
+      allow update, delete: if request.auth != null && resource.data.author.id == request.auth.uid;
+
+      // Comments can be read by anyone.
+      // They can only be created by authenticated users.
+      // Comments cannot be edited or deleted through the client.
+      match /comments/{commentId} {
+        allow read: if true;
+        allow create: if request.auth != null;
+        allow update, delete: if false;
+      }
+    }
+
+    // Boards are not yet implemented.
+    match /boards/{boardId} {
+      allow read, write: if false;
+    }
+  }
+}

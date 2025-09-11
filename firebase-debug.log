@@ -1,0 +1,92 @@
+[debug] [2025-09-07T20:56:52.618Z] ----------------------------------------------------------------------
+[debug] [2025-09-07T20:56:52.621Z] Command:       /nix/store/ws50yvm6vzlzf7jzz6n7xh4szddrack1-nodejs-20.19.1/bin/node /nix/store/ddncjx4vr7n8ighdsnmviznfzlpb3d54-firebase-tools-14.15.1/lib/node_modules/firebase-tools/lib/bin/firebase.js deploy --only hosting
+[debug] [2025-09-07T20:56:52.622Z] CLI Version:   14.15.1
+[debug] [2025-09-07T20:56:52.622Z] Platform:      linux
+[debug] [2025-09-07T20:56:52.622Z] Node Version:  v20.19.1
+[debug] [2025-09-07T20:56:52.623Z] Time:          Sun Sep 07 2025 20:56:52 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-09-07T20:56:52.623Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-09-07T20:56:53.141Z] No OAuth tokens found
+[debug] [2025-09-07T20:56:53.142Z] No OAuth tokens found
+[error] Failed to fetch Firebase Project from current Studio Workspace: Unable to refresh auth: not yet authenticated.
+[debug] [2025-09-07T20:56:53.148Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-09-07T20:56:53.149Z] > authorizing via signed-in user (mehdibada1@gmail.com)
+[debug] [2025-09-07T20:56:53.149Z] [iam] checking project heritagelink-1uwxx for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-09-07T20:56:53.150Z] No OAuth tokens found
+[debug] [2025-09-07T20:56:53.150Z] No OAuth tokens found
+[debug] [2025-09-07T20:56:53.151Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-09-07T20:56:53.151Z] > authorizing via signed-in user (mehdibada1@gmail.com)
+[debug] [2025-09-07T20:56:53.153Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/heritagelink-1uwxx:testIamPermissions [none]
+[debug] [2025-09-07T20:56:53.154Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/heritagelink-1uwxx:testIamPermissions x-goog-quota-user=projects/heritagelink-1uwxx
+[debug] [2025-09-07T20:56:53.154Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/heritagelink-1uwxx:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-09-07T20:56:53.341Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/heritagelink-1uwxx:testIamPermissions 200
+[debug] [2025-09-07T20:56:53.342Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/heritagelink-1uwxx:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-09-07T20:56:53.348Z] No OAuth tokens found
+[debug] [2025-09-07T20:56:53.348Z] No OAuth tokens found
+[debug] [2025-09-07T20:56:53.348Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-09-07T20:56:53.348Z] > authorizing via signed-in user (mehdibada1@gmail.com)
+[debug] [2025-09-07T20:56:53.353Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/heritagelink-1uwxx [none]
+[debug] [2025-09-07T20:56:53.637Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/heritagelink-1uwxx 200
+[debug] [2025-09-07T20:56:53.637Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/heritagelink-1uwxx {"projectId":"heritagelink-1uwxx","projectNumber":"397056190947","displayName":"Heritagelink","name":"projects/heritagelink-1uwxx","resources":{"hostingSite":"heritagelink-1uwxx"},"state":"ACTIVE","etag":"1_bda95e30-1151-4658-891d-9d6cf0ba4ee2"}
+[debug] [2025-09-07T20:57:00.747Z] defaultcredentials: no credential available.
+[debug] [2025-09-07T20:57:00.748Z] No OAuth tokens found
+[debug] [2025-09-07T20:57:00.748Z] No OAuth tokens found
+[debug] [2025-09-07T20:57:00.749Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-09-07T20:57:00.749Z] > authorizing via signed-in user (mehdibada1@gmail.com)
+[debug] [2025-09-07T20:57:00.751Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/heritagelink-1uwxx/sites pageToken=&pageSize=10
+[debug] [2025-09-07T20:57:01.019Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/heritagelink-1uwxx/sites 200
+[debug] [2025-09-07T20:57:01.021Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/heritagelink-1uwxx/sites {"sites":[{"name":"projects/heritagelink-1uwxx/sites/heritagelink-1uwxx","defaultUrl":"https://heritagelink-1uwxx.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-09-07T20:57:01.024Z] No OAuth tokens found
+[debug] [2025-09-07T20:57:01.025Z] No OAuth tokens found
+[debug] [2025-09-07T20:57:01.025Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-09-07T20:57:01.025Z] > authorizing via signed-in user (mehdibada1@gmail.com)
+[debug] [2025-09-07T20:57:01.025Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/heritagelink-1uwxx/sites 
+[debug] [2025-09-07T20:57:01.162Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/heritagelink-1uwxx/sites 200
+[debug] [2025-09-07T20:57:01.163Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/heritagelink-1uwxx/sites {"sites":[{"name":"projects/heritagelink-1uwxx/sites/heritagelink-1uwxx","defaultUrl":"https://heritagelink-1uwxx.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-09-07T20:57:01.165Z] No OAuth tokens found
+[debug] [2025-09-07T20:57:01.165Z] No OAuth tokens found
+[debug] [2025-09-07T20:57:01.165Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-09-07T20:57:01.166Z] > authorizing via signed-in user (mehdibada1@gmail.com)
+[debug] [2025-09-07T20:57:01.166Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/heritagelink-1uwxx/webApps/-/config [none]
+[debug] [2025-09-07T20:57:01.641Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/heritagelink-1uwxx/webApps/-/config 200
+[debug] [2025-09-07T20:57:01.645Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/heritagelink-1uwxx/webApps/-/config {"projectId":"heritagelink-1uwxx","appId":"1:397056190947:web:f8d968a3bfcd469ba858d6","storageBucket":"heritagelink-1uwxx.firebasestorage.app","apiKey":"AIzaSyBo_CPHlfNbrZ2fGr0vfD5lPXvTslQkpKs","authDomain":"heritagelink-1uwxx.firebaseapp.com","messagingSenderId":"397056190947"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-09-07T20:57:25.310Z] No OAuth tokens found
+[debug] [2025-09-07T20:57:25.312Z] No OAuth tokens found
+[debug] [2025-09-07T20:57:25.312Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-09-07T20:57:25.312Z] > authorizing via signed-in user (mehdibada1@gmail.com)
+[debug] [2025-09-07T20:57:25.313Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/heritagelink-1uwxx/sites/heritagelink-1uwxx [none]
+[debug] [2025-09-07T20:57:25.472Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/heritagelink-1uwxx/sites/heritagelink-1uwxx 200
+[debug] [2025-09-07T20:57:25.472Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/heritagelink-1uwxx/sites/heritagelink-1uwxx {"name":"projects/heritagelink-1uwxx/sites/heritagelink-1uwxx","defaultUrl":"https://heritagelink-1uwxx.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 15.3.3
+
+[info]    - Environments: .env.local, .env
+
+
+[info]    Creating an optimized production build ...
+
+[info] Failed to compile.
+
+
+[info] ./src/app/api/genkit/route.ts
+Module not found: Package path ./server is not exported from package /home/user/studio/node_modules/@genkit-ai/next (see exports field in /home/user/studio/node_modules/@genkit-ai/next/package.json)
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[info] 
+> Build failed because of webpack errors
+
+[debug] [2025-09-07T20:58:48.595Z] Error: ENOENT: no such file or directory, open '/home/user/studio/.next/server/middleware-manifest.json'
+[error] 
+[error] Error: An unexpected error has occurred.
